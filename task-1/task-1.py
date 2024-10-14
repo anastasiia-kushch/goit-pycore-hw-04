@@ -4,11 +4,13 @@ def total_salary(path):
     with open(path, 'r') as file:
         lines = file.readlines()
         
-        salaries = tuple()
+        salaries = []
 
         for line in lines:
-            name, salary = line.strip().split(',')
-            print(f'{name} has {salary}')
+            _, salary = line.strip().split(',')
+            salaries.append(salary)
+            
+        print(salaries)
 
 
 
