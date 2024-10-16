@@ -7,15 +7,15 @@ def get_cats_info(path):
     Retrieves information about cats from a specified file.
 
     Parameters:
-    path (str or Path): The path to the text file containing cat data. Each line in the file should represent one cat, with values separated by commas in the format: 'id,name,age'.
+    path (str or Path): the path to the text file containing cat data. Each line in the file should represent one cat, with values separated by commas in the format: 'id,name,age'.
 
     Returns:
-    tuple: A tuple of dictionaries, where each dictionary contains the 'id', 'name', and 'age' of a cat.
+    tuple: a tuple of dictionaries, where each dictionary contains the 'id', 'name', and 'age' of a cat.
 
     Raises:
-    ValueError: If there is a formatting error in a line (e.g., missing or incorrect data).
-    FileNotFoundError: If the specified file is not found.
-    IOError: If there is an error reading the file.
+    ValueError: if there is a formatting error in a line (e.g., missing or incorrect data).
+    FileNotFoundError: if the specified file is not found.
+    IOError: if there is an error reading the file.
 
     Note:
     The function prints a detailed error message in case of data format errors or file reading issues. In case of an error, it returns None.

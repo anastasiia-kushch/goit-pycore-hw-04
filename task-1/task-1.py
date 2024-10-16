@@ -7,15 +7,15 @@ def total_salary(path):
     Calculates the total and average salary of developers from a given file.
 
     Parameters:
-    path (str or Path): The path to the text file containing salary data. Each line in the file should represent one developer, with values separated by commas, in the format: 'name,salary'.
+    path (str or Path): the path to the text file containing salary data. Each line in the file should represent one developer, with values separated by commas, in the format: 'name,salary'.
 
     Returns:
-    tuple: A tuple containing two integers - the total salary and the average salary of all developers in the file.
+    tuple: a tuple containing two integers - the total salary and the average salary of all developers in the file.
 
     Raises:
-    ValueError: If there is a formatting error in a line (e.g., missing or incorrect salary value).
-    FileNotFoundError: If the specified file is not found.
-    IOError: If there is an error reading the file.
+    ValueError: if there is a formatting error in a line (e.g., missing or incorrect salary value).
+    FileNotFoundError: if the specified file is not found.
+    IOError: if there is an error reading the file.
 
     Note:
     The function prints a detailed error message in case of data format errors or file reading issues. In case of an error, it returns None.
