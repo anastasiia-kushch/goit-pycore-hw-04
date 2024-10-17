@@ -1,4 +1,4 @@
-from colorama import Fore, Back
+from colorama import Fore
 
 def parse_input(user_input):
     if not user_input.strip():
@@ -55,14 +55,15 @@ def show_all(contacts):
 
 def show_info():
     result = [
-        'add <name> <phone>: add contact', 
-        'change <name> <phone>: change phone', 
-        'phone <name>: show phone',
-        'all: show all contacts', 
-        'info: show commands', 
-        'close or exit: exit'
+        colored_output('add <name> <phone>') + ': adds a new contact (e.g., add John 123456789)',
+        colored_output('change <name> <phone>') + ': changes the phone number of an existing contact (e.g., change John 987654321)',
+        colored_output('phone <name>') + ': shows the phone number of the specified contact (e.g., phone John)',
+        colored_output('all') + ': shows all contacts in your phonebook',
+        colored_output('info') + ': displays the list of available commands',
+        colored_output('close or exit') + ': exits the application'
     ]
-    return colored_info('\n'.join(result))
+    return colored_info("Available commands:\n" + '\n'.join(result))
+
 
 
 def colored_output(phrase):

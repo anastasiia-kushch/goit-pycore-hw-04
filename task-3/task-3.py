@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-from colorama import Fore, Back
+from colorama import Fore
 
 def directory_contents(path, level=0):
     """
