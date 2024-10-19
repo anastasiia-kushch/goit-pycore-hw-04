@@ -111,7 +111,7 @@ def main():
             print(colored_info("Good bye!" + Fore.RESET))
             break
         elif command == "hello":
-            print(colored_info("How can I help you?" + Fore.RESET))
+            print(colored_info("How can I help you?"))
         elif command == "info":
             print(show_info())
         elif command == "add":
@@ -123,7 +123,7 @@ def main():
         elif command == "all":
             print(show_all(contacts))
         else:
-            print("Invalid command.")
+            print(colored_info("Invalid command."))
 
 if __name__ == "__main__":
     main()
